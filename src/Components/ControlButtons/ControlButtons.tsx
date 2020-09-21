@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-import "./ControlButtons.css";
+import './ControlButtons.css';
 
 export interface IControlButtonsProps {
 	themes: Array<string>
@@ -9,9 +9,9 @@ export interface IControlButtonsProps {
 export const ControlButtons: React.FC<IControlButtonsProps> = ({ themes, handleTheme }) => {
 
 	return (
-		<div className="dropdown-container">
+		<div className='dropdown-container'>
 			<div>
-				<div className="dropdown-heading">Theme</div>
+				<div className='dropdown-heading'>Theme</div>
 				<select onChange={(e) => handleTheme(e.target.value)}>
 					{themes.map(theme => <option key={theme} value={theme}>{theme}</option>)}
 				</select>

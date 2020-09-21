@@ -2,27 +2,27 @@ import * as ace from 'ace-builds/src-noconflict/ace';
 import 'ace-builds/src-noconflict/mode-r';
 
 export class CustomHighlightRules extends ace.acequire(
-	"ace/mode/text_highlight_rules"
+	'ace/mode/text_highlight_rules'
 ).TextHighlightRules {
 	constructor() {
 		super();
 
 		this.$rules = {
-			"start": [
+			'start': [
 				{
 					token: function (value: string) {
 						if (value.match(/[^a-zA-Z]+/g)) {
-							return "non-alphabets";
+							return 'non-alphabets';
 						}
 					},
-					regex: "[^a-zA-Z]"
+					regex: '[^a-zA-Z]'
 				},
 			]
 		};
 	}
 }
 
-export default class RCustomMode extends ace.acequire("ace/mode/r")
+export default class RCustomMode extends ace.acequire('ace/mode/r')
 	.Mode {
 	constructor() {
 		super();

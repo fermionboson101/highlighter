@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.css';
-import { RHighlighter } from './Components/RHighlighter';
+import { Rhighlighter } from './Components/Rhighlighter';
 
 const App: React.FC = () => {
   return (
-    <RHighlighter headingText={'R'} />
+    <Rhighlighter headingText={'R'} />
   );
 }
 

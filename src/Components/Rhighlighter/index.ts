@@ -1,1 +1,1 @@
-export * from './RHighlighter';
+export * from './Rhighlighter';

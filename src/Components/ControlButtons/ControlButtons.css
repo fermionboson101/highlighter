@@ -1,0 +1,8 @@
+.dropdown-container{
+	display: flex;
+	flex-direction: row-reverse;
+	margin:10px
+}
+.dropdown-heading{
+	font-weight: bold;
+}

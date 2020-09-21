@@ -21,6 +21,7 @@ export const RHighlighter: React.FC<IRHighlighterProps> = ({ headingText }) => {
 
 	const [currentTheme, setCurrentTheme] = useState('monokai');
 	const [themes] = useState(['monokai', 'github']);
+
 	const aceRef = useRef<any>(null);
 
 	useEffect(() => {

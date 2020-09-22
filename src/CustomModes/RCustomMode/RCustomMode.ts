@@ -1,7 +1,7 @@
 import * as ace from 'ace-builds/src-noconflict/ace';
 import 'ace-builds/src-noconflict/mode-r';
 
-export class CustomHighlightRules extends ace.acequire(
+class CustomHighlightRules extends ace.acequire(
 	'ace/mode/text_highlight_rules'
 ).TextHighlightRules {
 	constructor() {

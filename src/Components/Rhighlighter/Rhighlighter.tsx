@@ -9,8 +9,9 @@ import 'ace-builds/src-noconflict/snippets/r';
 import 'ace-builds/src-min-noconflict/ext-searchbox';
 
 import { ControlButtons } from '../ControlButtons';
-import RCustomMode from '../../CustomModes/RCustomMode';
+import RCustomMode from '../../CustomModes/RCustomMode/RCustomMode';
 
+import '../../CustomModes/RCustomMode/RCustomMode.css';
 import './Rhighlighter.css';
 
 export interface IRhighlighterProps {
